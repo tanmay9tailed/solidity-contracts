@@ -12,4 +12,8 @@ contract TanmayToken is ERC20, Ownable {
     function mintTo(address _to, uint amount) public onlyOwner {
         _mint(_to, amount);
     }
+
+    function burn(address _acc, uint value) public onlyOwner{
+        _burn(_acc, value);
+    }
 }
